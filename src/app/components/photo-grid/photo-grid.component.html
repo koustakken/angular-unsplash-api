@@ -1,0 +1,9 @@
+<div class="photo-grid">
+	<div *ngFor="let photo of photos" class="photo-thumbnail">
+		<img [src]="photo.url" alt="Photo">
+		<div class="photo-info">
+			<span class="author">{{ photo.author }}</span>
+			<span class="description">{{ photo.description }}</span>
+		</div>
+	</div>
+</div>
