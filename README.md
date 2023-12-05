@@ -1,27 +1,19 @@
 # AngularUnsplashApi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+Попросил нейронку сделать тестовое задание для Angular Junior Developer
 
-## Development server
+# Задание
+Разработка компонента для загрузки и отображения списка фотографий с использованием API Unsplash
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Описание 
+ Вам нужно разработать компонент для загрузки и отображения списка фотографий с использованием публичного API Unsplash. Компонент должен загружать список фотографий и отображать их в виде сетки с миниатюрами. При клике на миниатюру, должно открываться модальное окно с увеличенной версией фотографии и ее дополнительной информацией.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ # Требования
+- Используйте Angular для разработки компонента.
+- Получите доступ к публичному API Unsplash. Для этого вам понадобится зарегистрироваться на сайте Unsplash и создать приложение для получения доступа к API.
+- Реализуйте компонент для загрузки и отображения списка фотографий. Компонент должен использовать HTTP-запросы для получения списка фотографий с помощью API Unsplash.
+- Отобразите полученные фотографии в виде сетки с миниатюрами. Миниатюры должны быть кликабельными и открывать модальное окно с увеличенной версией фотографии.
+- В модальном окне должна отображаться увеличенная версия фотографии и ее дополнительная информация, такая как автор и описание.
+- Добавьте возможность фильтрации фотографий по категориям или ключевым словам.
+- Добавьте возможность сохранения понравившихся фотографий в избранное.
+- Создайте юнит-тесты для компонента, используя фреймворк для тестирования, такой как Jasmine или Jest.
