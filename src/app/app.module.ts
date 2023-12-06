@@ -10,7 +10,7 @@ import { PhotoGridComponent } from './components/photo-grid/photo-grid.component
 @NgModule({
 	declarations: [
 		AppComponent,
-		PhotoGridComponent
+		PhotoGridComponent,
 	],
 	imports: [
 		BrowserModule,

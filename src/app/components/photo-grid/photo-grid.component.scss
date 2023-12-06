@@ -2,11 +2,15 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	grid-gap: 10px;
+	padding: 20px;
 }
 
 .photo-thumbnail {
 	position: relative;
 	cursor: pointer;
+	background: #fff;
+	padding: 2rem;
+	border: 1px solid #ccc;
 }
 
 .photo-thumbnail img {
@@ -20,7 +24,7 @@
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 10px;
+	min-height: 2rem;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: white;
 }
@@ -32,4 +36,46 @@
 
 .description {
 	font-size: 12px;
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.modal p {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.modal button {
+	background-color: #ccc;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.modal button:hover {
+	background-color: #aaa;
 }

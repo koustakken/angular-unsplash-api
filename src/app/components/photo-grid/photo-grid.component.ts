@@ -10,6 +10,7 @@ import { Photo } from '../../types/photo.interface';
 export class PhotoGridComponent implements OnInit {
 
 	photos: Photo[] = [];
+	selectedPhoto: Photo | null = null;
 
 	constructor(private http: HttpClient) { }
 
@@ -32,5 +33,15 @@ export class PhotoGridComponent implements OnInit {
 				description: photo.description
 			}));
 		});
+	}
+
+	openModal(photo: Photo) {
+		// Открытие модального окна
+		this.selectedPhoto = photo;
+	}
+
+	closeModal() {
+		// Закрытие модального окна
+		this.selectedPhoto = null;
 	}
 }
