@@ -1,9 +1,18 @@
 <div class="photo-grid">
-	<div *ngFor="let photo of photos" class="photo-thumbnail">
+	<div *ngFor="let photo of photos" class="photo-thumbnail" (click)="openModal(photo)">
 		<img [src]="photo.url" alt="Photo">
 		<div class="photo-info">
 			<span class="author">{{ photo.author }}</span>
 			<span class="description">{{ photo.description }}</span>
 		</div>
+	</div>
+</div>
+
+<div *ngIf="selectedPhoto" class="modal">
+	<div class="modal-content">
+		<img [src]="selectedPhoto.url" alt="Photo">
+		<span class="author">{{ selectedPhoto.author }}</span>
+		<span class="description">{{ selectedPhoto.description }}</span>
+		<button (click)="closeModal()">Close</button>
 	</div>
 </div>
